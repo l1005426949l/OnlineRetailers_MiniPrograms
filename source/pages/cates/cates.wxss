@@ -1,0 +1,17 @@
+/* pages/cates/cates.wxss */
+page{
+  width: 100%;
+}
+.certi{
+text-align:center;
+margin-top: 35%;
+}
+.certi image{
+  width: 188rpx;
+  height: 154rpx; 
+}
+.certi view{
+  font-size: 25rpx;
+  margin-top:40rpx;
+  color: #747474;
+}

@@ -1,0 +1,148 @@
+<!--pages/order/order.wxml-->
+<view hidden="{{!flag}}" class="swiper-tab">
+  <scroll-view scroll-x="true" scroll-into-view="{{vId}}" style=" white-space: nowrap; display: flex">
+    <view id="a" class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">待付款</view>
+    <view id="b" class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">待收货</view>
+    <view id="c" class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">售后</view>
+    <view id="d" class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">我的订单</view>
+  </scroll-view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <!--待付款  -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+
+      <!--商品列表  -->
+      <!-- <view class="welfares" >
+          <image src='/imga/kongbaiye.png'></image>
+          <text>抱歉，没有相关信息</text>
+        </view>  -->
+      <view class='shop'>
+        <view class='store'>
+          <view class="a-goods-conts">SUPVP自营</view>
+          <text class='state'>等待付款</text>
+        </view>
+      </view>
+      <!--商品  -->
+      <view class='shops' catchtap='inder'>
+        <image src='/imga/12x.png'></image>
+        <view class='nation'>起来是解放军和分别高于手就看看就好机号单身狗</view>
+        <view class='abstract'>孵化基地灰色空间丰</view>
+      </view>
+      <!--结算  -->
+      <view class='regate'>
+        <view class='mation'>
+          <text>共1件商品 合计: ¥399.00(含运费0)</text>
+        </view>
+        <view class='cancel'>
+          <text class='cnacels'>取消订单</text>
+          <text>付款</text>
+        </view>
+      </view>
+      <!--底部  -->
+      <view class='payment'>
+         <view class='all'>
+         全选
+         </view>
+       <text class='alls'>合并付款(0)</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!--待收货  -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+
+      <!--商品列表  -->
+      <!-- <view class="welfares" >
+          <image src='/imga/kongbaiye.png'></image>
+          <text>抱歉，没有相关信息</text>
+        </view>  -->
+      <view class='shop'>
+        <view class='store'>
+          <view class='ziying'>SUPVP自营</view>
+          <text class='state'>付款成功</text>
+        </view>
+      </view>
+      <!--商品  -->
+      <view class='shops' catchtap='inders'>
+        <image src='/imga/12x.png'></image>
+        <view class='nation'>起来是解放军和分别高于手就看看就好机号单身狗</view>
+        <view class='abstract'>孵化基地灰色空间丰</view>
+      </view>
+      <!--结算  -->
+      <view class='regate'>
+        <view class='mation'>
+          <text>共1件商品 合计: ¥399.00(含运费0)</text>
+        </view>
+        <view class='cancel'>
+          <text class='cancelss'>查看物流</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!--售后  -->
+   <swiper-item>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+
+      <!--商品列表  -->
+      <!-- <view class="welfares" >
+          <image src='/imga/kongbaiye.png'></image>
+          <text>抱歉，没有相关信息</text>
+        </view>  -->
+      <view class='shop'>
+        <view class='store'>
+          <view class='ziying'>SUPVP自营</view>
+          <text class='state'>退款成功</text>
+        </view>
+      </view>
+      <!--商品  -->
+      <view class='shops' catchtap='onder'>
+        <image src='/imga/12x.png'></image>
+        <view class='nation'>起来是解放军和分别高于手就看看就好机号单身狗</view>
+        <view class='abstract'>孵化基地灰色空间丰</view>
+      </view>
+      <!--结算  -->
+      <view class='regate'>
+        <view class='mation'>
+          <text>共1件商品 合计: ¥399.00(含运费0)</text>
+        </view>
+        <view class='cancel'>
+          <text class='cancelss'>查看详情</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!--我的订单  -->
+    <swiper-item>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+
+      <!--商品列表  -->
+      <!-- <view class="welfares" >
+          <image src='/imga/kongbaiye.png'></image>
+          <text>抱歉，没有相关信息</text>
+        </view>  -->
+      <view class='shop'>
+        <view class='store'>
+          <view class='ziying'>SUPVP自营</view>
+          <text class='state'>退款成功</text>
+        </view>
+      </view>
+      <!--商品  -->
+      <view class='shops' catchtap='dess'>
+        <image src='/imga/12x.png'></image>
+        <view class='nation'>起来是解放军和分别高于手就看看就好机号单身狗</view>
+        <view class='abstract'>孵化基地灰色空间丰</view>
+      </view>
+      <!--结算  -->
+      <view class='regate'>
+        <view class='mation'>
+          <text>共1件商品 合计: ¥399.00(含运费0)</text>
+        </view>
+          <view class='cancele'>
+          <text class='cnacels'>删除订单</text>
+          <text catchtap='onders'>查看物流</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

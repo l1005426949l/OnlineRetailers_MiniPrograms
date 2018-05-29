@@ -1,0 +1,378 @@
+<!--pages/details/details.wxml-->
+<view class='wrap'>
+  <!--轮播图  -->
+  <view class='shuffling'>
+    <swiper class="swiperss" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='false'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" data-src="{{item}}" bindtap="previewImage" class="slide-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!--商品详情  -->
+    <view class="introduce">
+      <view class="detailed">
+        <text class="introduce-name">释放芬芳的潘多拉手链致七夕,诱惑的味道,如影随形三生三世</text>
+      </view>
+      <view class="prices">
+        <text class="Present-price">¥299.00</text>
+      </view>
+      <view class="times">
+        <image src="/imga/72.png" />
+      </view>
+    </view>
+  </view>
+  <!--商品种类  -->
+  <view class="mation">
+    <!--颜色-->
+    <view class="Color">
+      <text>颜色</text>
+      <text class="format">薄荷绿</text>
+      <text class="format">冰岛蓝</text>
+      <text class="format">复古红</text>
+      <text class="format">雅典黑</text>
+    </view>
+    <!--尺码-->
+    <view class="size">
+      <text>尺码</text>
+      <text class="formats">20英寸</text>
+      <text class="formats">24英寸</text>
+      <text class="formats">28英寸</text>
+    </view>
+    <!--信息-->
+    <view class="infor">商品信息</view>
+    <!--规格-->
+    <view class="speci">
+      <!--品牌-->
+      <view class="brand">
+        <text>品牌</text>
+        <text>ALLOY+</text>
+      </view>
+      <!--商品名称-->
+      <view class="brand">
+        <text>商品名称</text>
+        <text>ALLOY+</text>
+      </view>
+      <!--产品质量-->
+      <view class="brand">
+        <text>产品质量</text>
+        <text>3.7kg</text>
+      </view>
+      <!--拉杆种类-->
+      <view class="brand">
+        <text>拉杆种类</text>
+        <text>单杆</text>
+      </view>
+      <!--锁具方式-->
+      <view class="brand">
+        <text>锁具方式</text>
+        <text>普通密码锁</text>
+      </view>
+      <!--材质-->
+      <view class="brand">
+        <text>材质</text>
+        <text>PC</text>
+      </view>
+      <!--尺寸-->
+      <view class="brand">
+        <text>尺寸</text>
+        <text>20英寸</text>
+      </view>
+      <!--适用人群-->
+      <view class="brand">
+        <text>适用人群</text>
+        <text>青少年</text>
+      </view>
+    </view>
+    <!--服务-->
+    <view class="service">
+      SUPVP服务
+    </view>
+  </view>
+  <!--售后-->
+  <view class="sale">
+    <view class="promise">
+      <image src="/imga/xq_icon_zh.png" />
+      <text>假一赔十</text>
+    </view>
+    <view class="promise">
+      <image src="/imga/xq_icon_zh.png" />
+      <text>会员免邮</text>
+    </view>
+    <view class="promise">
+      <image src="/imga/xq_icon_zh.png" />
+      <text>权威鉴定</text>
+    </view>
+    <view class="promise">
+      <image src="/imga/xq_icon_zh.png" />
+      <text>七天退换</text>
+    </view>
+    <view class="unpack">
+      <image src="/imga/jinru1.png" />
+    </view>
+  </view>
+  <!--品牌-->
+  <view class="brands">
+    <view class="shoppe">
+      <image src='/imga/xq_icon_pp.png' class='trademark' />
+      <view class="more">
+        <text>ALLOY+越甲</text>
+        <text>在售商品168件</text>
+      </view>
+      <view class="enter">
+        <text>进入品牌</text>
+        <image src="/imga/jinru.png" />
+      </view>
+    </view>
+    <view class=" swiper-container2">
+      <!--swiper容器[可以随意更改该容器的样式-->
+      <swiper class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+        <swiper-item class="swiper-slide swiper-slide-active aaa">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+          <view class="details">
+            <image src="/imga/112x.png" class="Img" />
+            <view class="cost">
+              <text>亿觅（emie）萌猫系列迷你充电器/</text>
+              <text>¥167.00</text>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-slide swiper-slide-next aaa" style="width: 350px !important;">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+          <view class="details">
+            <image src="/imga/112x.png" class="Img" />
+            <view class="cost">
+              <text>亿觅（emie）萌猫系列迷你充电器/我细化你</text>
+              <text>¥167.00</text>
+            </view>
+          </view>
+
+        </swiper-item>
+        <swiper-item class="swiper-slide swiper-slide-next aaa">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+
+          <view class="enters">
+            <text>查看更多>></text>
+          </view>
+
+
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!--商品图片  -->
+  <view class='detaileds'>
+    <view class='sdes'>
+      <text>商品详情</text>
+    </view>
+    <!--图片  -->
+    <view class='sedeimg'>
+      <image src='/imga/1.png'></image>
+    </view>
+    <view class='sedeimg'>
+      <image src='/imga/1.png'></image>
+    </view>
+    <view class='sedeimg'>
+      <image src='/imga/1.png'></image>
+    </view>
+    <view class='sedeimg'>
+      <image src='/imga/1.png'></image>
+    </view>
+    <view class="recommended">
+      <text>为你推荐</text>
+    </view>
+    <view class=" swiper-container2">
+      <!--swiper容器[可以随意更改该容器的样式-->
+      <swiper class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+        <swiper-item class="swiper-slide swiper-slide-active aaa">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+          <view class="details">
+            <image src="/imga/112x.png" class="Img" />
+            <view class="cost">
+              <text>亿觅（emie）萌猫系列迷你充电器/</text>
+              <text>¥167.00</text>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-slide swiper-slide-next aaa" style="width: 350px !important;">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+          <view class="details">
+            <image src="/imga/112x.png" class="Img" />
+            <view class="cost">
+              <text>亿觅（emie）萌猫系列迷你充电器/我细化你</text>
+              <text>¥167.00</text>
+            </view>
+          </view>
+
+        </swiper-item>
+        <swiper-item class="swiper-slide swiper-slide-next aaa">
+          <view class="details">
+            <image src="/imga/2x.png" class="Img" />
+            <view class="cost">
+              <text>ALLOY+ 商务出行拉杆箱 20英寸</text>
+              <text>¥598.00</text>
+            </view>
+
+          </view>
+
+          <view class="details">
+            <image src="/imga/12x.png" class="Img" />
+            <view class="cost">
+              <text>urban forest树系列双肩包</text>
+              <text>¥268.00</text>
+            </view>
+          </view>
+
+
+          <view class="enters">
+            <text>查看更多>></text>
+          </view>
+
+
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!--加入购物车-->
+  <view class="footer-box">
+    <view class="contact">
+      <contact-button style="opacity:0;position:absolute;" type="default-dark" session-from="weapp" size="27"></contact-button>
+      <view style='position:absolute;bottom:10rpx;'> 客服 </view>
+    </view>
+    <view class="shop-cart-btn" bindtap="goShopCar">
+      <view class="shop-num">({{shopNum}})</view>
+      <view style='position:absolute;bottom:10rpx;'> 购物车 </view>
+    </view>
+    <view class="join-shop-cart" bindtap="toAddShopCar">加入购物车</view>
+    <view class="now-buy" bindtap="tobuy">立即购买</view>
+  </view>
+  <view class="show-popup" hidden="{{hideShopPopup}}">
+    <view class="popup-mask" bindtap="closePopupTap"></view>
+    <view class="popup-contents">
+      <view class="pop-goods-info">
+        <view class="pop-goods-des">
+          <image src='/imga/12x.png' class='shangp'></image>
+          <text>¥399</text>
+          <text>¥369</text>
+          <image src='/imga/jinka.png' class='jinka'></image>
+          <view class='jieshao'>
+          Oracleen 小欧OrcCleen电动牙刷成人用品
+          </view>
+          <view class='inventory'>库存充足</view>
+        </view>
+        <view class="pop-goods-close" bindtap="closePopupTap"></view>
+      </view>
+      <view class="size-label-box">
+          <view class='model'>型号</view>
+         <block wx:for="{{array}}">
+         <text class="chose-txt"   data-id="{{index}}" bindtap="choseTxtColor" style="{{index == id?' border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">  
+                <text class="chose-p" >{{item.name}}</text>  
+            </text>  
+            </block>
+  <view class='model'>颜色</view>
+  <block wx:for="{{arrays}}" wx:for-index="idx" wx:for-item="oneItem">
+         <text id='{{idx}}' class="chose-txts"  bindtap="chooseCatalog" style="{{idx == ids?' border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">  
+                <text class="chose-pp" >{{oneItem.names}}</text> 
+            </text>  
+            </block>
+      </view>
+      <view class="buy-num-box">
+        <view class="num-label">数量</view>
+         <view class='stepper'>
+  <text class='{{minusStatus}}' type='number'  bindtap='bindMinus'>-</text>
+  <input bindinput='bindManual' value='{{num}}'></input>
+  <text bindtap='bindPlus'>+</text>
+</view>
+      </view>
+    
+      <view class="popup-join-btn" wx:if="{{shopType =='addShopCar'}}" type="primary"bindtap="showok">
+        加入购物车
+      </view>
+      
+      <view class="popup-join-btn" wx:if="{{shopType =='tobuy'}}" catchtap='inder' >
+        立即购买
+      </view>   
+    </view>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+/* pages/enshrine/enshrine.wxss */
+
+.welfares-image {
+  height: 70px !important;
+  width: 80px;
+}
+
+.touch-item {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 10px;
+  line-height: 22px;
+  margin-right: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  margin-left: -90px;
+}
+
+.del {
+  background-color: orangered;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.touch-move-active .content, .touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.welfares-image {
+  width: 150rpx;
+  height: 130rpx !important;
+  padding: 12rpx;
+  position: absolute;
+}
+
+.product-name {
+  margin-left: 180rpx;
+  overflow: hidden; /*超出部分隐藏*/
+  white-space: nowrap; /*不换行*/
+  text-overflow: ellipsis; /*超出部分文字以...显示*/
+}
+
+.welfares-good {
+  position: relative;
+}
+
+.product-min {
+  margin-left: 180rpx;
+  overflow: hidden; /*超出部分隐藏*/
+  white-space: nowrap; /*不换行*/
+  text-overflow: ellipsis; /*超出部分文字以...显示*/
+}
+
+.product-price-new {
+  margin-left: 160rpx;
+  padding: 0 20rpx;
+  color: #fc606e;
+}
+.card {
+  width: 60rpx;
+  height: 20rpx;
+}
+.cart{
+  width: 51rpx;
+  height: 51rpx;
+  position: absolute;
+  right: 40rpx;
+}
+.product-price-wrap{
+  position: relative;
+}

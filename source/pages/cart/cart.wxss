@@ -1,0 +1,105 @@
+page{
+  width: 100%;
+}
+.certi{
+text-align:center;
+padding-top:5%;
+border-top:1rpx solid #f2f2f2;
+
+}
+.certi image{
+  width: 188rpx;
+  height: 154rpx; 
+}
+.certi view{
+  font-size: 25rpx;
+  margin-top:40rpx;
+  color: #747474;
+}
+.mended{
+  margin-top: 10rpx;
+  text-align: center;
+  background:white;
+}
+.mended text{
+  font-size: 30rpx;
+}
+.welfares {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+}
+
+.welfares-good {
+  margin: 0px auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 24rpx;
+}
+
+.welfares-image {
+  width: 685rpx;
+  height: 380rpx;
+  display: inline-block;
+  border: 1px #eee solid;
+}
+
+.welfares-good .product-name {
+  color: #000;
+  text-align: left;
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-min {
+  float: left;
+  margin: 0px 5px;
+  color: #ababab;
+}
+
+.product-price-wrap {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.product-price-new {
+  color: #fc606e;
+  float: left;
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: 900;
+}
+
+.product-price-old {
+  color: #2e2e2f;
+  float: left;
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+.discount {
+  position: absolute;
+  right: 5px;
+  color: #c1a675;
+  width: 40px;
+  font-size: 14px;
+  text-align: center;
+  height: 20px;
+  border: 1px solid #c1a675;
+}
+
+.card {
+  width: 90rpx;
+  height: 30rpx;
+  margin-top: 7px;
+  float: left;
+}

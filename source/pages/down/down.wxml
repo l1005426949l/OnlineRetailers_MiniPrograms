@@ -1,0 +1,30 @@
+<!--pages/down/down.wxml-->
+<view class='wrap'>
+  <view class='tation'>请上传本人身份证照片</view>
+  <!--身份证正面  -->
+  <view class='front' style=' background-image:url("/imga/aut_po.png");'>
+    <view class="info-items" bindtap="setPhotoInfo">
+      <view class="infotext">
+        <image wx:if="{{imgUrl!=null}}" class="userinfo-avatar" src="{{imgUrl}}" background-size="cover"></image>
+        <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+    </view>
+  </view>
+  <!--反面  -->
+    <view class='front' style=' background-image:url("/imga/aut.png");'>
+    <view class="info-items" bindtap="setPhotoInfos">
+      <view class="infotexts">
+        <image wx:if="{{imgUrls!=null}}" class="userinfo-avatar" src="{{imgUrls}}" background-size="cover"></image>
+        <image wx:else class="userinfo-avatar" src="{{userInfos.avatarUrls}}" background-size="cover"></image>
+      </view>
+    </view>
+  </view>
+  <!--提示  -->
+  <view class='wensi'>
+  <image src='/imga/aut_de.png'></image>
+   <!--确认上传  -->
+   <view class='confirm' catchtap='order'>
+   <text>确认上传</text>
+   </view>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<!--pages/couple/couple.wxml-->
+<view style=' background-image: url(/imga/new.png);' class='wrap'>
+</view>

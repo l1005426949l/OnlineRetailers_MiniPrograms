@@ -1,0 +1,7 @@
+<!--pages/cates/cates.wxml-->
+<view>
+  <view class='certi'>
+  <image src='/imga/kongbaiye.png'></image>
+  <view>抱歉，没有相关信息</view>
+  </view>
+</view>

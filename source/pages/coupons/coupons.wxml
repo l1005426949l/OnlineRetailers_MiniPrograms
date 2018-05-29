@@ -1,0 +1,5 @@
+<!--pages/coupons/coupons.wxml-->
+ <view class='address'>
+    <image src='/imga/kongbai.png'></image>
+    <view>抱歉，没有相关信息</view>
+  </view>

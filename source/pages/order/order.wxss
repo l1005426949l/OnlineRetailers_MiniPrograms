@@ -1,0 +1,219 @@
+/* pages/order/order.wxss */
+page {
+  height: 100%;
+  background: #f2f2f2;
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  top: 0;
+  position: fixed;
+   z-index: 111; 
+  height: 30px;
+  background: white;
+}
+
+.swiper-tab-list {
+  font-size: 33rpx;
+  display: inline-block;
+  margin: 0  18px;
+}
+.on {
+  color: #c1a675;
+  padding: 4px 0;
+  border-bottom: 5rpx solid #c1a675;
+}
+.welfares {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top:20%;
+}
+.swiper-box {
+   display: block; 
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.welfares image{
+  width:188rpx;
+  height: 154rpx; 
+}
+.welfares text{
+  font-size: 26rpx;
+  color: #A9A9A9;
+}
+/*内容  */
+.store{
+  background: white;
+  padding:20rpx 0;
+  width: 100%;
+}
+.shop{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+checkbox{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+}
+.store{
+   position: relative;
+}
+
+.a-goods-conts{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 90rpx;
+    width: 870rpx;
+    box-sizing: border-box;
+    transition: margin-left 0.2s ease-in-out;
+    background: url(https://cdn.it120.cc/images/weappshop/gou.png) no-repeat 30rpx center;
+    background-size: 40rpx auto; 
+    font-size: 30rpx;
+}
+.a-goods-conts:active{
+    background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
+    background-size: 40rpx auto; 
+}
+.state{
+  position:absolute;
+font-size:30rpx;
+right:40rpx;
+top:20rpx;
+color: #D54944;
+
+}
+.shops{
+  padding: 20rpx;
+}
+.shops image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.nation{
+  margin-left:100rpx;
+overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+margin-top:-90rpx;
+font-size:30rpx;
+
+}
+.abstract{
+  margin-left:100rpx;
+overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+font-size:25rpx;
+color: #ADADAD;
+}
+.regate{
+  background: white; 
+  height: 50px;  
+}
+.mation{
+  position: relative;
+}
+.mation text{
+padding:10rpx;
+position:absolute;
+right:30rpx;
+font-size:20rpx;
+
+}
+.cancel{
+  background: white;
+  position: relative;
+}
+.cancel text{
+ font-size:20rpx;
+padding:5rpx 10rpx;
+position:absolute;
+margin-top:45rpx;
+border-radius:5rpx;
+
+}
+.cancelss{
+  border: 2rpx solid #000;
+  right: 60rpx;
+}
+.cnacels{
+   border: 2rpx solid #000;
+   right: 140rpx;
+}
+.cancel text:nth-child(2){
+    border: 2rpx solid #D54843;
+right:50rpx;
+color: #D54843;
+
+}
+.all{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 90rpx;
+    width: 870rpx;
+    box-sizing: border-box;
+    transition: margin-left 0.2s ease-in-out;
+    background: url(https://cdn.it120.cc/images/weappshop/gou.png) no-repeat 30rpx center;
+    background-size: 40rpx auto; 
+    font-size: 30rpx;
+}
+.ziying{
+  display: flex;
+    justify-content:space-between;
+    padding-left: 70rpx;
+    width: 870rpx;
+    box-sizing: border-box;
+    transition: margin-left 0.2s ease-in-out;
+    background-size: 40rpx auto; 
+    font-size: 30rpx;
+}
+.all:active{
+    background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
+    background-size: 40rpx auto; 
+}
+.payment{
+  position: fixed;
+  background: white;
+  height:60px;
+  z-index: 1111;
+  bottom: 0rpx;
+  line-height: 60px;
+}
+.alls{
+position:absolute;
+font-size:30rpx;
+right:120rpx;
+color: white;
+background: #D54843;
+top:0rpx;
+padding: 0 20rpx;
+}
+.cancele{
+  background: white;
+  position: relative;
+}
+.cancele text{
+ font-size:20rpx;
+padding:5rpx;
+position:absolute;
+margin-top:45rpx;
+border-radius:5rpx;
+border: 2rpx solid #000;
+
+}
+.cancele text:nth-child(2){
+right:50rpx;
+
+}
+.cancele text:nth-child(1){
+
+   right: 160rpx;
+}

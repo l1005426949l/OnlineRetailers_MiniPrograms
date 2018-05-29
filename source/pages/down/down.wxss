@@ -1,0 +1,43 @@
+/* pages/down/down.wxss */
+page{
+  background: #f2f2f2;
+}
+.tation{
+  font-size: 25rpx;
+  margin: 30rpx auto;
+  text-align: center;
+}
+.front{
+   width: 480rpx;
+   height: 282rpx;
+   margin: 60rpx auto;
+   text-align: center;
+   background-size: 100% 100%;
+}
+.userinfo-avatar{
+    width: 480rpx;
+   height: 282rpx;
+   margin: 0 auto;
+   text-align: center;
+   background-size: 100% 100%;
+}
+.wensi{
+  background: white;
+  position: fixed;
+  bottom: 0;
+}
+.wensi image{
+width: 750rpx;
+height: 197rpx;
+}
+.confirm{
+  text-align:center;
+  background:#C1A675;
+  width: 90%;
+  padding: 20rpx 0;
+  margin: 80rpx auto 30rpx; 
+}
+.confirm text{
+  color: white;
+  font-size: 30rpx;
+}

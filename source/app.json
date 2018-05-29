@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cart/cart",
+    "pages/gold/gold",
+    "pages/order/order",
+    "pages/privilege/privilege",
+    "pages/open/open",
+    "pages/install/install",
+    "pages/approve/approve",
+    "pages/site/site",
+    "pages/about/about",
+    "pages/down/down",
+    "pages/new/new",
+    "pages/enshrine/enshrine",
+    "pages/history/history",
+    "pages/cates/cates",
+    "pages/pass/pass",
+    "pages/details/details",
+    "pages/template-cart/template-cart",
+    "pages/couple/couple",
+    "pages/payment/payment",
+    "pages/ving/ving",
+    "pages/buy/buy",
+    "pages/coupons/coupons",
+    "pages/after/after",
+    "pages/trading/trading",
+    "pages/impower/impower"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SUPVP金卡",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0145a"
+  },
+  "tabBar": {
+    "selectedColor": "#C1A675",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imga/2.png",
+        "selectedIconPath": "imga/11.png",
+        "text": "甄选"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "imga/3.png",
+        "selectedIconPath": "imga/4.png",
+        "text": "品牌"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "imga/5.png",
+        "selectedIconPath": "imga/6.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/gold/gold",
+        "iconPath": "imga/7.png",
+        "selectedIconPath": "imga/8.png",
+        "text": "金卡"
+      }
+    ]
+  }
+}

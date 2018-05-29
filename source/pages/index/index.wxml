@@ -1,0 +1,262 @@
+
+<view hidden="{{!flag}}" class="swiper-tab" >
+  <scroll-view scroll-x="true" scroll-into-view="{{vId}}" style=" white-space: nowrap; display: flex">
+    <view wx:if="{{morkData!=null}}" wx:for="{{morkData}}" id="a{{item.id}}" class="swiper-tab-list {{item.id==wxmlTabid ? 'on' : ''}}" data-current="{{item.id}}" bindtap="swichNav" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd">{{item.name}}</view>
+  </scroll-view>
+  <view class='c'>
+    <image src='/imga/xiala1.png' class='down'></image>
+  </view>
+  <!-- <view hidden="{{flag}}" class="swiper-tab" bindlongtap="tapHidden">
+    <view id="a" data-current="0" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">推荐</view>
+    <view id="b" data-current="1" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">家电</view>
+    <view id="c" data-current="2" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">百货</view>
+    <view id="d" data-current="3" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">数码</view>
+    <view id="e" data-current="4" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">箱包</view>
+    <view id="f" data-current="5" bindtap="swichNav" bindtouchstart="touchStart" bindtouchend="touchEnd">美妆</view>
+    <view bindtap="tapHidden">返回</view>
+  </view> -->
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <!--轮播图  -->
+      <swiper class="swipers" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color='#FFFFFF' circular='false' catchtap="catchTapCategory">
+        <block wx:for="{{movies}}" wx:for-index="index">
+          <swiper-item>
+            <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <!--标题  -->
+      <view style=' text-align: center; margin-top:30rpx'>
+        <image src='/imga/biati.png' style='width:648rpx; height:38rpx'></image>
+      </view>
+      <!--新人专享  -->
+      <view class='exclusive' catchtap='inder'>
+        <image src='/imga/xinren.png'></image>
+      </view>
+      <!--精品推荐  -->
+      <view class='recommended'>
+        <image src='/imga/ctui.png' style='width:174rpx; height:32rpx'></image>
+        <text>品牌好货 深度折扣</text>
+      </view>
+      <!--商品列表  -->
+      <scroll-view scroll-y="true" class='mtop' bindtap='details'>
+        <view class="welfares">
+          <block wx:for-items="{{goodsWelfareItems}}" wx:key="name introduce">
+            <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.id}}">
+              <view>
+                <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+              </view>
+              <view class="product-name">
+                {{item.name}}
+              </view>
+              <view class='product-min'>
+                {{item.introduce}}
+              </view>
+              <view class="product-price-wrap">
+                <p class="product-price-new">￥{{item.market}}</p>
+                <p class="product-price-old">￥{{item.vip}}</p>
+                <image src='/imga/jinka.png' class='card'></image>
+                <p class="discount">购买</p>
+              </view>
+
+            </view>
+          </block>
+        </view>
+        <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+          <view class="weui-loading"></view>
+          <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{recommends}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+      </scroll-view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <!--商品列表  -->
+     <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{good}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+          <view class="weui-loading"></view>
+          <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{rec}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+    </scroll-view> 
+   <view>woaini</view>
+  </swiper-item>
+  <swiper-item>
+    <!--商品列表  -->
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{goods}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <!--商品列表  -->
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{goodsWel}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <!--商品列表  -->
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{goodsWelfare}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <!--商品列表  -->
+    <scroll-view scroll-y="true" class='mtop' style="height: 100%;">
+      <view class="welfares">
+        <block wx:for-items="{{goodsWelfareIt}}" wx:key="name introduce">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.img_750_414}}" class="welfares-image" mode="widthFix" />
+            </view>
+            <view class="product-name">
+              {{item.name}}
+            </view>
+            <view class='product-min'>
+              {{item.introduce}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.market}}</p>
+              <p class="product-price-old">￥{{item.vip}}</p>
+              <image src='/imga/jinka.png' class='card'></image>
+              <p class="discount">购买</p>
+            </view>
+
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

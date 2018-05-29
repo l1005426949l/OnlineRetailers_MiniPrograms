@@ -1,0 +1,103 @@
+<!--全局变量  -->
+<view class='wrap'>
+  <!--顶部样式  -->
+  <view class='backdrop'>
+    <!--设置  -->
+    <view class='install'>
+      <image src='/imga/shezhi.png' catchtap="toOrders"></image>
+    </view>
+    <view class='top'>
+      <!--登录主页  -->
+      <view class='nickname'>
+        <image src='/imga/baise.png' class='enter'></image>
+        <image src='/imga/jk.png' class='frame'></image>
+        <text>您好，请您登陆</text>
+      </view>
+      <!--金卡  -->
+      <view class='goldCard'>
+        <image src='/imga/beijin.png' class='goldimg'></image>
+        <image src='/imga/jinkas.png' class='supvp'></image>
+        <image src='/imga/jinkatequan.png' class='privilege' catchtap="toDer"></image>
+      </view>
+    </view>
+    <!--操作  -->
+    <view class='operation'>
+      <view class='operationImg'>
+        <image src='/imga/heisebeijing.png' class='hese'></image>
+        <view class='baser'>
+          <!--代付款  -->
+          <view class='payment' data-gotoId="0" catchtap="toOrder">
+            <image src='/imga/daifukua.png'></image>
+            <text>代付款</text>
+          </view>
+          <!--待收货  -->
+          <view class='payment' data-gotoId="1" catchtap="toOrder">
+            <image src='/imga/daishouhuo.png'></image>
+            <text>待收货</text>
+          </view>
+          <!--售后  -->
+          <view class='payment' data-gotoId="2" catchtap="toOrder">
+            <image src='/imga/shouhou.png'></image>
+            <text>售后</text>
+          </view>
+          <!--我的订单  -->
+          <view class='payment' data-gotoId="3" catchtap="toOrder">
+            <image src='/imga/lishidingdan.png'></image>
+            <text>我的订单</text>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+  </view>
+  <!--列表  -->
+  <view class='list'>
+    <!--我的收藏  -->
+    <view class='collection' catchtap='inder'>
+      <image src='/imga/wodeshoucang.png' class='icon'></image>
+      <text>我的收藏</text>
+      <image src='/imga/jinru.png' class='dala'></image>
+    </view>
+    <!--浏览历史  -->
+     <view class='collection' catchtap='indoer'>
+      <image src='/imga/wdeliulan.png' class='icon'></image>
+      <text>浏览历史</text>
+      <image src='/imga/jinru.png' class='dala'></image>
+    </view>
+    <!--我的礼券  -->
+    <view class='collection' catchtap='indos'>
+      <image src='/imga/youhuiquan.png' class='icon'></image>
+      <text>我的礼券</text>
+      <image src='/imga/jinru.png' class='dala'></image>
+    </view>
+  </view>
+   <!--推荐  -->
+   <view class='mended'>
+   <text>—— 为你推荐 ——</text>
+   </view>
+   <scroll-view scroll-y="true" class='mtop' style="height: 100%;" catchtap="catchTapCategory">
+        <view class="welfares">
+          <block wx:for-items="{{goodsWelfareItems}}" wx:key="name text">
+            <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+              <view>
+                <image src="{{item.imageurl}}" class="welfares-image" mode="widthFix" />
+              </view>
+              <view class="product-name">
+                {{item.name}}
+              </view>
+              <view class='product-min'>
+                {{item.text}}
+              </view>
+              <view class="product-price-wrap">
+                <p class="product-price-new">￥{{item.newprice}}</p>
+                <p class="product-price-old">￥{{item.oldprice}}</p>
+                <image src='/imga/jinka.png' class='card'></image>
+                <p class="discount">购买</p>
+              </view>
+
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+</view>

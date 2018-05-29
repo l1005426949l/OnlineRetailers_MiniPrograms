@@ -1,0 +1,14 @@
+/* pages/coupons/coupons.wxss */
+.address{
+  text-align: center;
+  margin-top: 30%;
+}
+image{
+  width: 188rpx;
+  height: 154rpx;
+}
+.address view{
+  font-size: 30rpx;
+  margin: 30rpx 0;
+  color: #ABABAB;
+}

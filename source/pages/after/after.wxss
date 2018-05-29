@@ -1,0 +1,120 @@
+/* pages/after/after.wxss */
+page{
+  background: #f2f2f2;
+}
+.await{
+  background: #B49A69;
+}
+.payment{
+ display:flex;
+flex-direction:column;
+margin-left:40rpx;
+
+
+}
+.payment text{
+  padding: 10rpx;
+}
+.payment text:nth-child(1){
+  color:white;
+  font-size: 30rpx; 
+}
+.payment text:nth-child(2){
+  color:white;
+  font-size: 25rpx; 
+}
+.refund{
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  background: white;
+}
+.refund text:nth-child(2){
+  color: #D54843;
+}
+.refunds{
+  margin-top: 1rpx;
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  background: white;
+}
+.refunds text:nth-child(2){
+  font-weight: bold;
+  font-size: 25rpx;
+}
+.process{
+  text-align: center;
+  margin: 30rpx;
+}
+.process image{
+  width: 500rpx;
+  height: 43rpx;
+}
+.flow{
+  display: flex;
+  justify-content: space-around;
+    align-content: center;
+  align-items: center;
+}
+.flows{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.flows text{
+  font-size: 25rpx;
+}
+
+.introduce{
+  background: white;
+  margin-top:20rpx; 
+  padding: 0 0 10rpx 0;
+}
+.goods{
+  padding: 20rpx 40rpx;
+  display: flex;
+  align-items: center;
+}
+.goods text{
+  font-size: 28rpx;
+}
+.modity{
+  border-top: 2rpx solid  #f2f2f2;
+  border-bottom: 2rpx solid  #f2f2f2;
+  padding: 20rpx;
+  height: 90px;
+}
+.modity image{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+}
+.modity view:nth-child(2){
+  font-size: 28rpx;
+  margin-top:50rpx;
+
+} 
+.modity view:nth-child(3){
+  font-size: 25rpx;
+  color: #B2B2B2;
+} 
+.modity{
+  position: relative;
+}
+.modity view{
+ margin-left:180rpx;
+}
+.number{
+  margin-top: 20rpx;
+  background: white;
+  padding: 20rpx 40rpx;
+}
+.number view{
+  font-size: 20rpx;
+  color:#898989;
+  padding: 5rpx 0; 
+}

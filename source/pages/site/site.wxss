@@ -1,0 +1,28 @@
+/* pages/site/site.wxss */
+.address{
+  text-align: center;
+  margin-top: 30%;
+}
+image{
+  width: 188rpx;
+  height: 154rpx;
+}
+.address view{
+  font-size: 30rpx;
+  margin: 30rpx 0;
+  color: #ABABAB;
+}
+.add{
+  position: fixed;
+  bottom: 20rpx;
+  margin: 0 5%;
+  text-align: center;
+  width: 90%;
+  border-radius: 200rpx;
+  background:#D64B43;
+  padding: 20rpx 0; 
+}
+.add text{
+  font-size: 35rpx;
+  color: white;
+}

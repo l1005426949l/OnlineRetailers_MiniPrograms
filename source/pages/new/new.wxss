@@ -1,0 +1,43 @@
+/* pages/new/new.wxss */
+.consignee text{
+  font-size: 35rpx;
+}
+input {
+  width: 80%;
+  font-size: 30rpx;
+  float: right;
+}
+.consignee{
+  margin:0 20rpx;
+  border-bottom: 5rpx solid #f2f2f2;
+  padding:20rpx 0; 
+}
+.placeholder{
+  width: 80%;
+  font-size: 30rpx;
+  float: right;
+  margin-top: 6rpx;
+}
+.dizhi{
+  font-size: 35rpx;
+}
+radio{
+  font-size: 35rpx;
+}
+radio-group{
+   margin: 25rpx;
+}
+.save{
+  position: fixed;
+  bottom: 30rpx;
+  text-align: center;
+  width: 90%;
+  background: #D95244;
+  margin: 0 5%;
+  padding: 20rpx 0;
+  border-radius: 1000rpx;
+}
+.save text{
+  color: white;
+  font-size: 35rpx;
+}

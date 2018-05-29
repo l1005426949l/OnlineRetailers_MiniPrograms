@@ -1,0 +1,214 @@
+.wrap{
+  width: 100%;
+  background: #f5f5f5;
+}
+.backdrop{
+  background: black;
+}
+.install image{
+  width: 39rpx;
+  height: 37rpx;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+.nickname{
+position: relative;
+}
+.enter{
+  position: absolute;
+  right:0;
+  width: 646rpx;
+  height: 228rpx; 
+  top: -58px;
+}
+.goldCard{
+  margin-top: 40px;
+  position: relative;
+}
+.goldimg{
+  width: 705rpx;
+  height: 421rpx;
+}
+.frame{
+  position: absolute;
+  width: 52rpx;
+  height: 52rpx;
+  margin-top: -26px;
+  margin-left: 62px;
+}
+.nickname text{
+  position: absolute;
+  font-size: 14px;
+  margin-left: 95px;
+  margin-top: -20px;
+}
+.supvp{
+  width: 299rpx;
+  height: 39rpx;
+  position: absolute;
+  left: 45px;
+  top: 20px;
+}
+.privilege{
+  position: absolute;
+  width: 168rpx;
+  height: 22rpx;
+  bottom: 70px;
+  right: 50px;
+}
+.operation{
+  position: relative;
+}
+.operationImg{
+  position: absolute;
+  margin-top: -60px;
+}
+.hese{
+  width: 750rpx;
+  height: 152rpx;
+}
+.payment image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.cargo image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.sales image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.my image{
+  width: 42rpx;
+  height: 42rpx;
+}
+.baser{
+  display: flex;
+  justify-content: space-around;
+  margin: -60px 0 0 0; 
+}
+.payment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+.payment text{
+  font-size: 12px;
+  color: #C1A675;
+}
+.list{
+  margin-top: 25px;
+  background: white;
+}
+.collection{
+  margin-left: 10px;
+  display: flex;
+	align-items: center;
+  border-bottom: 5rpx solid #f5f5f5;
+  padding: 20rpx 0;
+}
+.icon{
+  width: 41rpx;
+  height: 41rpx;
+}
+.collection text{
+  margin-left: 5px;
+  font-size: 15px;
+}
+.dala{
+  width: 13rpx;
+  height: 23rpx;
+  position:  absolute;
+  right: 30rpx;
+}
+.mended{
+  margin-top: 10rpx;
+  text-align: center;
+  background:white;
+}
+.mended text{
+  font-size: 30rpx;
+}
+/*商品列表  */
+
+.welfares {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+}
+
+.welfares-good {
+  margin: 0px auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 24rpx;
+}
+
+.welfares-image {
+  width: 685rpx;
+  height: 380rpx;
+  display: inline-block;
+  border: 1px #eee solid;
+}
+
+.welfares-good .product-name {
+  color: #000;
+  text-align: left;
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-min {
+  float: left;
+  margin: 0px 5px;
+  color: #ababab;
+}
+
+.product-price-wrap {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.product-price-new {
+  color: #fc606e;
+  float: left;
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: 900;
+}
+
+.product-price-old {
+  color: #2e2e2f;
+  float: left;
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+.discount {
+  position: absolute;
+  right: 5px;
+  color: #c1a675;
+  width: 40px;
+  font-size: 14px;
+  text-align: center;
+  height: 20px;
+  border: 1px solid #c1a675;
+}
+
+.card {
+  width: 90rpx;
+  height: 30rpx;
+  margin-top: 7px;
+  float: left;
+}

@@ -1,0 +1,56 @@
+<!--pages/buy/buy.wxml-->
+<view class='wrap'>
+<view class='add' catchtap='inder'>
+ <view>+ 添加收货地址</view>
+</view>
+<!--商品  -->
+<view class='shop'>
+   <image src='/imga/12x.png' class='shops'></image>
+   <view class='introduce'>居家生活送你上火居家生活送你上火居家生活送你上火居家生活送你上火</view>
+  <view class='price'>
+    <text>¥199</text>
+    <text>¥179</text>
+    <image src='/imga/jinka.png' class='jinka'></image>
+    <text class='num'>x1</text>
+    </view>
+</view>
+<!--优惠卷  -->
+<view class='conter'>
+   <view class='discounts' catchtap='onder'>
+      <text>优惠券</text>
+      <image src='/imga/jinru.png'></image>
+   </view>
+   <!--运费  -->
+    <view class='freight'>
+      <text>运费</text>
+      <text>0</text>
+   </view>
+   <!--优惠  -->
+   <view class='freight'>
+      <text>优惠</text>
+      <text>0</text>
+   </view>
+   <!--买家留言  -->
+   <view class='message'>
+    <text>买家留言</text>
+    <input placeholder='选填、30字以内'></input>
+   </view>
+   <!--数量  -->
+   <view class='amount'>
+     <text>共1件</text>
+     <text>小计</text>
+     <text>¥179.00</text>
+   </view>
+   <!--帮助  -->
+   <view class='help'>
+    <text>需要帮助</text>
+    <text>周一至周五 9:00-18:30</text>
+    <image src='/imga/icon_music.png'></image>
+   </view>
+</view>
+<view class='total'>
+  <text>合计:</text>
+  <text>¥179.00</text>
+  <text>提交订单</text>
+</view>
+</view>

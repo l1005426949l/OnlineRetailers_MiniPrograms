@@ -1,0 +1,21 @@
+<!--pages/open/open.wxml-->
+<view class='wrap'>
+  <!--账号  -->
+  <view class='portrait'>
+    <image src='/imga/buy_tx.png'></image>
+    <text class='account'>手机账号</text>
+    <text class='opten'>(159****5725)</text>
+  </view>
+  <!--会员专享  -->
+  <view class='privilege'>
+    <image src='/imga/buy.png'></image>
+  </view>
+  <!--金卡支付  -->
+  <view class='price'>
+  <input value='超值SUPVP金卡                                               ¥199'></input>
+  </view>
+  <!--立即支付  -->
+  <view class='diately'>
+  <image src='/imga/buy_pay.png'></image>
+  </view>
+</view>

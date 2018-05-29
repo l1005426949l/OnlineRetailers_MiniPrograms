@@ -1,0 +1,40 @@
+<!--pages/privilege/privilege.wxml-->
+<!--全局变量  -->
+<view class='wrap'>
+ <!--背景图  -->
+ <view class='privilege'>
+ <image src='/imga/pri.png'></image>
+ </view>
+ <!--图层  -->
+ <view class='layer' style=' background-image: url("/imga/pri1.png");'>
+   <image src='/imga/pri4.png' class='price' catchtap="toOrder"></image>
+  <image src='/imga/pri2.png' class='service'></image>  
+ </view>
+  <view class='aaaa' style=' background-image: url("/imga/pri3.png");'>
+      <!--商品列表  -->
+      <scroll-view scroll-y="true" class='mtop' style="height: 100%;" catchtap="catchTapCategory">
+        <view class="welfares">
+          <block wx:for-items="{{goodsWelfareItems}}" wx:key="name text">
+            <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+              <view>
+                <image src="{{item.imageurl}}" class="welfares-image" mode="widthFix" />
+              </view>
+              <view class="product-name">
+                {{item.name}}
+              </view>
+              <view class='product-min'>
+                {{item.text}}
+              </view>
+              <view class="product-price-wrap">
+                <p class="product-price-new">￥{{item.newprice}}</p>
+                <p class="product-price-old">￥{{item.oldprice}}</p>
+                <image src='/imga/jinka.png' class='card'></image>
+                <p class="discount">购买</p>
+              </view>
+
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+ </view>
+</view>

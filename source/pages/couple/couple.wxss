@@ -1,0 +1,10 @@
+/* pages/couple/couple.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.wrap{
+  background-size: 100%;
+  width: 100%;
+  height:1833rpx;
+}

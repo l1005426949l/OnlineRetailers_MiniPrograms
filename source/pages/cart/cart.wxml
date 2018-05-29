@@ -1,0 +1,36 @@
+<view>
+  <view class='certi'>
+  <image src='/imga/kongbaiye.png'></image>
+  <view>抱歉，没有相关信息</view>
+  </view>
+</view>
+
+      <!--商品列表  -->
+
+  <view class='mended'>
+   <text>—— 为你推荐 ——</text>
+   </view>
+   <scroll-view scroll-y="true" class='mtop' style="height: 100%;" catchtap="catchTapCategory">
+        <view class="welfares">
+          <block wx:for-items="{{goodsWelfareItems}}" wx:key="name text">
+            <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+              <view>
+                <image src="{{item.imageurl}}" class="welfares-image" mode="widthFix" />
+              </view>
+              <view class="product-name">
+                {{item.name}}
+              </view>
+              <view class='product-min'>
+                {{item.text}}
+              </view>
+              <view class="product-price-wrap">
+                <p class="product-price-new">￥{{item.newprice}}</p>
+                <p class="product-price-old">￥{{item.oldprice}}</p>
+                <image src='/imga/jinka.png' class='card'></image>
+                <p class="discount">购买</p>
+              </view>
+
+            </view>
+          </block>
+        </view>
+      </scroll-view>

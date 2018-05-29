@@ -1,0 +1,89 @@
+<!--pages/install/install.wxml-->
+<!-- 全部局变量 -->
+<view class='wrap'>
+  <view class='wtop'>
+    <!--用户  -->
+    <view class='user' catchtap='toOrder'>
+      <image src='{{userInfo.avatarUrl}}' class='portrait'></image>
+      <text>SUPVP972836</text>
+      <image src='/imga/jinru1.png' class='unpack'></image>
+    </view>
+    <!-- 性别 -->
+    <view class='gender'>
+     <view class='info-items'>
+      <text>性别</text>
+      <view class='infotext'>
+       <picker bindchange='bindPickerChang' value='{{index}}' range='{{array}}'>
+        <view>
+          {{array[index]}}
+         
+        </view>
+      </picker>
+       <image src='/imga/jinru.png' class='unpackss'></image>
+      </view>
+      </view>
+      <!--出生日期  -->
+        <view class='info-items'>
+      <text>出生日期</text>
+      <view class='infotext'>
+       <picker bindchange='bindPickerDate'  mode='date' start="1991-01-01" end="2017-12-30" value='{{data}}' >
+        <view >
+          {{data}}
+         
+        </view>
+      </picker>
+       <image src='/imga/jinru.png' class='unpackss'></image>
+      </view>
+      </view>
+      </view>
+      <!--实名认证  -->
+      <view class='approve'>
+        <view  catchtap='toder'>
+          <text>实名认证</text>
+          <text class='unverified'>未认证</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+      </view>
+      <view class='.picker_one' catchtap='toders'>
+          <text>地址管理</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+
+    <!--账户安全  -->
+    <view class='security'>
+      <view class='account'>
+      <text>账户安全</text>
+      </view>
+      <!--手机号  -->
+       <view class='.picker_one'>
+          <text>手机号</text>
+          <text class='unverified'>18222222536</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+        <!--修改密码  -->
+         <view class='.picker_one'>
+          <text>修改密码</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+    </view>
+    <!-- 分享 -->
+    <view class='share'>
+      <view class='.picker_one'>
+          <text>分享APP</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+      </view>
+       <view class='.picker_one'>
+          <text>给我们评价</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+         <view class='.picker_one' catchtap='abouts'>
+          <text>关于我们</text>
+          <image src='/imga/jinru.png' class='unpacks'></image>
+        </view>
+    </view>
+    <!--退出当前账户  -->
+    <view class='exit'>
+     <text>退出当前账户</text>
+    </view>
+  </view>
+</view>

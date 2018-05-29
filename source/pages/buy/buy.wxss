@@ -1,0 +1,155 @@
+/* pages/buy/buy.wxss */
+.add{
+border-top:10rpx solid #f2f2f2;
+text-align:center;
+padding:20rpx 0;
+font-size:30rpx;
+color:#878787;
+
+}
+.introduce{
+  font-size: 25rpx;
+  color: #878787;
+  overflow: hidden;
+text-overflow:ellipsis;
+margin-left:100rpx;
+padding-top:25px;
+white-space: nowrap;
+}
+.shop{
+background-color: #f2f2f2;
+height: 150rpx;
+}
+.price{
+  position: relative;
+}
+.price text{
+  font-size: 25rpx;
+}
+.price text:nth-child(2){
+  margin-left: 10rpx;
+}
+.price text:nth-child(1){
+  margin-left: 100rpx;
+  color:#D54843;
+}
+.shops{
+  width: 100rpx;
+  height: 100rpx;
+  position:absolute;
+  margin-top: 30rpx;
+}
+.jinka{
+  width: 90rpx;
+  height: 30rpx;
+  margin-top:22rpx;
+ position:absolute;
+
+}
+.num{
+  position: absolute;
+  right:40rpx;
+  margin-top:20rpx;
+}
+.discounts{
+  display: flex;
+  justify-content:space-between;
+align-items:center;
+border-bottom:2rpx solid #f2f2f2;
+padding:20rpx 25rpx;
+
+}
+.discounts text{
+  font-size: 30rpx;
+}
+.discounts image{
+   width: 13rpx;
+   height: 23rpx;
+}
+.freight{
+   display: flex;
+  justify-content:space-between;
+align-items:center;
+border-bottom:2rpx solid #f2f2f2;
+padding:20rpx 40rpx  20rpx  25rpx;
+}
+.freight text{
+  font-size: 30rpx;
+}
+.message text{
+  font-size: 30rpx;
+}
+.message{
+   display: flex;
+align-items:center;
+border-bottom:2rpx solid #f2f2f2;
+padding:20rpx 40rpx  20rpx  25rpx;
+}
+input{
+  font-size: 30rpx;
+  margin-left: 40rpx;
+}
+.amount{
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 5rpx solid #f2f2f2;
+}
+.amount text:nth-child(1){
+  font-size: 20rpx;
+  color: #878787;
+}
+.amount text:nth-child(2){
+  position: absolute;
+  font-size: 20rpx;
+   right: 160rpx;
+}
+.amount text:nth-child(3){
+  font-size: 30rpx;
+  color: #D54843;
+  position: absolute;
+  right: 40rpx;
+}
+.help{
+  padding: 25rpx;
+   display: flex;
+  align-items: center;
+  position: relative;
+}
+.help text:nth-child(1){
+  font-size: 30rpx;
+}
+.help text:nth-child(2){
+  font-size: 25rpx;
+  color: #D54843;
+  position: absolute;
+  right: 120rpx;
+}
+.help image{
+  width: 62rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 25rpx;
+}
+.total{
+  position: fixed;
+  bottom: 0;
+  padding: 25rpx;
+  display: flex;
+  align-items: center;
+  width:100%;
+}
+.total text{
+  font-size: 30rpx;
+}
+.total text:nth-child(2){
+  margin-left: 5rpx;
+}
+.total text:nth-child(3){
+position:absolute;
+background:#D54843;
+padding:20rpx;
+right:50rpx;
+color:white;
+}

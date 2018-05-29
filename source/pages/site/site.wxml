@@ -1,0 +1,11 @@
+<!--pages/site/site.wxml-->
+<view class='wrap'>
+  <view class='address'>
+    <image src='/imga/kongbai.png'></image>
+    <view>抱歉，没有相关信息</view>
+  </view>
+  <!--添加地址  -->
+  <view class='add' catchtap='intor'>
+  <text>+添加地址</text>
+  </view>
+</view>

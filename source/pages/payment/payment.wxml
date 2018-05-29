@@ -1,0 +1,97 @@
+<!--pages/payment/payment.wxml-->
+<!--订单详情  -->
+<view class='wrap'>
+  <!-- 等待付款 -->
+  <view class='await'>
+    <view class='payment'>
+      <text>等待买家付款</text>
+      <text>剩00:59:59自动关闭</text>
+    </view>
+    <view class="img">
+      <image src='/imga/det_fh.png'></image>
+    </view>
+  </view>
+  <!--地址  -->
+  <view class='address'>
+    <!--图标  -->
+    <view class='icon'>
+      <image src='/imga/det_icon.png'></image>
+    </view>
+    <!--收货人详情  -->
+    <view class='details'>
+      <text>收货人:  王熙</text>
+      <text>18101625102</text>
+    </view>
+    <view class='site'>收货地址: 上海市 浦东新区 周家渡路 洪山路121弄</view>
+  </view>
+  <!--商店详情  -->
+  <view class='introduce'>
+    <view class='goods'>
+      <text>万火专营</text>
+      <image src='/imga/jinru.png'></image>
+    </view>
+    <!--商品详情  -->
+    <view class='modity'>
+      <image src="/imga/112x.png"></image>
+      <view>喜上梢 （玄关灯） 原本色 沙比利版</view>
+      <view>原本色 沙比利</view>
+      <!--价格  -->
+      <view class='price'>
+        <text>¥299.00</text>
+        <text>x2</text>
+      </view>
+    </view>
+    <!--运费  -->
+    <view class='total'>
+      <text>商品总价</text>
+      <text>¥589</text>
+    </view>
+    <view class='total'>
+      <text>运费(快递)</text>
+      <text>¥0.00</text>
+    </view>
+    <view class='totals'>
+      <text>实付款</text>
+      <text>¥598.00</text>
+    </view>
+  </view>
+  <!--订单编号 -->
+  <view class='number'>
+    <view>订单编号： 134430545644436487</view>
+    <view>创建时间： 2018-03-13 13:48:20</view>
+  </view>
+  <view class='mended'>
+    <text>—— 为你推荐 ——</text>
+  </view>
+  <scroll-view scroll-y="true" class='mtop' style="height: 100%;" catchtap="catchTapCategory">
+    <view class="welfares">
+      <block wx:for-items="{{goodsWelfareItems}}" wx:key="name text">
+        <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+          <view>
+            <image src="{{item.imageurl}}" class="welfares-image" mode="widthFix" />
+          </view>
+          <view class="product-name">
+            {{item.name}}
+          </view>
+          <view class='product-min'>
+            {{item.text}}
+          </view>
+          <view class="product-price-wrap">
+            <p class="product-price-new">￥{{item.newprice}}</p>
+            <p class="product-price-old">￥{{item.oldprice}}</p>
+            <image src='/imga/jinka.png' class='card'></image>
+            <p class="discount">购买</p>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <!-- 取消 -->
+<view class='cance'> 
+  <view class='cancel'>
+    <text>取消订单</text>
+    <text>付款</text>
+  </view>
+</view>
+</view>
